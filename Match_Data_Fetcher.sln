@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchDataFetcher", "SEProjectApp\MatchDataFetcher.csproj", "{BF0DEDB6-7891-49F2-9B36-D9EB00847D0B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Match_Data_Fetcher_Install", "Match_Data_Fetcher_Install\Match_Data_Fetcher_Install.vdproj", "{2F010170-0AAD-4C8A-A47B-7254A7165506}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0DEDB6-7891-49F2-9B36-D9EB00847D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0DEDB6-7891-49F2-9B36-D9EB00847D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0DEDB6-7891-49F2-9B36-D9EB00847D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0DEDB6-7891-49F2-9B36-D9EB00847D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F010170-0AAD-4C8A-A47B-7254A7165506}.Debug|Any CPU.ActiveCfg = Debug
+		{2F010170-0AAD-4C8A-A47B-7254A7165506}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
