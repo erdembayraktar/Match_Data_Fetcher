@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\PC\source\repos\SEProjectApp\SEProjectApp\bin\Debug\net9.0-windows\data_fetcher.py", line 119, in <module>
+    data = fetch_data(league, start_year, end_year)
+  File "C:\Users\PC\source\repos\SEProjectApp\SEProjectApp\bin\Debug\net9.0-windows\data_fetcher.py", line 109, in fetch_data
+    results.extend(scrape_table(url, league, start_year, end_year))
+  File "C:\Users\PC\source\repos\SEProjectApp\SEProjectApp\bin\Debug\net9.0-windows\data_fetcher.py", line 48, in scrape_table
+    response.raise_for_status()
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/20/2008-2009/schedule/2008-2009-Bundesliga-Scores-and-Fixtures
+Traceback (most recent call last):
+  File "C:\Users\PC\source\repos\SEProjectApp\SEProjectApp\bin\Debug\net9.0-windows\data_fetcher.py", line 119, in <module>
+    data = fetch_data(league, start_year, end_year)
+  File "C:\Users\PC\source\repos\SEProjectApp\SEProjectApp\bin\Debug\net9.0-windows\data_fetcher.py", line 109, in fetch_data
+    results.extend(scrape_table(url, league, start_year, end_year))
+  File "C:\Users\PC\source\repos\SEProjectApp\SEProjectApp\bin\Debug\net9.0-windows\data_fetcher.py", line 48, in scrape_table
+    response.raise_for_status()
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://fbref.com/en/comps/13/2005-2006/schedule/2005-2006-Ligue-1-Scores-and-Fixtures
