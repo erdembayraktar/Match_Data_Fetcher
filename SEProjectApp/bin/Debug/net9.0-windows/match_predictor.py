@@ -20,6 +20,14 @@ def preprocess_data(file_path):
     if not required_columns.issubset(data.columns):
         return {"error": f"CSV file must contain the following columns: {required_columns}"}
 
+    # Geçersiz veya boş skorları filtrele
+    valid_scores = data['score'].str.contains(r'^\d+\s*[–-]\s*\d+$', na=False)
+    if not valid_scores.all():
+        data = data[valid_scores]
+
+    if data.empty:
+        return {"error": "No valid scores found in the data"}
+
     try:
         # Skorları ayrıştır ve int'e çevir
         data[['home_score', 'away_score']] = data['score'].str.replace("–", "-").str.split('-', expand=True).astype(int)
@@ -40,6 +48,7 @@ def preprocess_data(file_path):
     features.loc[:, 'away_team'] = features['away_team'].map(team_mapping)
 
     return {"features": features, "target": target, "team_mapping": team_mapping}
+
 
 def train_model(features, target):
     # Eğitim ve test verilerini ayır
